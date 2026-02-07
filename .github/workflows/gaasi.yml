@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: GAASI Survivability Gate
+      - name: GAASI Gate
         uses: akashdey1039ai-eng/antarraksha-gaasi-gate-proof/.github/actions/gaasi-gate@main
         with:
           agent_payload_path: gaasi-agent.json
