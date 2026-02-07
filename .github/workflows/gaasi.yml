@@ -7,7 +7,6 @@ on:
 jobs:
   gaasi-gate:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,3 +17,4 @@ jobs:
           agent_file: gaasi-agent.json
         env:
           GAASI_BEARER_TOKEN: ${{ secrets.GAASI_BEARER_TOKEN }}
+
