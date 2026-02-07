@@ -14,8 +14,9 @@ jobs:
       - name: GAASI Survivability Gate
         uses: akashdey1039ai-eng/antarraksha-gaasi-gate-proof/.github/actions/gaasi-gate@main
         with:
-          agent_file: gaasi-agent.json
+          agent_payload_path: gaasi-agent.json
         env:
           GAASI_API_URL: ${{ secrets.GAASI_API_URL }}
           GAASI_BEARER_TOKEN: ${{ secrets.GAASI_BEARER_TOKEN }}
+
 
