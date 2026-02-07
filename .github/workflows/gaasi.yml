@@ -16,5 +16,6 @@ jobs:
         with:
           agent_file: gaasi-agent.json
         env:
+          GAASI_API_URL: ${{ secrets.GAASI_API_URL }}
           GAASI_BEARER_TOKEN: ${{ secrets.GAASI_BEARER_TOKEN }}
 
