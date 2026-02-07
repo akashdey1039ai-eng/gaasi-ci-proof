@@ -1,0 +1,20 @@
+name: GAASI Survivability Gate
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  gaasi-gate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: GAASI Gate
+        uses: antarraksha/gaasi-gate@v1
+        with:
+          agent_file: gaasi-agent.json
+        env:
+          GAASI_BEARER_TOKEN: ${{ secrets.GAASI_BEARER_TOKEN }}
