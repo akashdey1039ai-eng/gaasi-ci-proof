@@ -1,4 +1,6 @@
-name: GAASI Survivability Gate
+- name: GAASI Survivability Gate
+  uses: akashdey1039ai-eng/antarraksha-gaasi-gate-proof/.github/actions/gaasi-gate@main
+
 
 on:
   pull_request:
