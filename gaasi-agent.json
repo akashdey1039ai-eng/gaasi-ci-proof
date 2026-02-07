@@ -1,0 +1,6 @@
+{
+  "agent_id": "test-chatbot-v1",
+  "agent_version": "1.0.0",
+  "capabilities": ["chat_response", "context_memory"],
+  "risk_tier": "high"
+}
